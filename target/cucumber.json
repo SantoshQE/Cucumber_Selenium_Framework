@@ -1,0 +1,175 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2309355307,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User navigates to URL https://www.phptravels.net/admin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.phptravels.net/admin",
+                  "offset": 22
+                }
+              ],
+              "location": "PhpTravel_StepDefinition.navigateToPhptravelsDemoSite(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1186347220,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "phptravels User enter valid admin username admin@phptravels.com and password demoadmin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 28
+                },
+                {
+                  "val": "admin@phptravels.com",
+                  "offset": 43
+                },
+                {
+                  "val": "demoadmin",
+                  "offset": 77
+                }
+              ],
+              "location": "PhpTravel_StepDefinition.phptravelsUserLogin(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6923110965,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "phptravels User admin is able to login successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 16
+                }
+              ],
+              "location": "PhpTravel_StepDefinition.checkPhpTravelsLoginSuccess(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5599946146,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PhpTravel_StepDefinition.launchWebBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Verify user is able to add new customer",
+        "description": "",
+        "id": "add-customer-functionality;verify-user-is-able-to-add-new-customer",
+        "after": [
+          {
+            "result": {
+              "duration": 2172020899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PhpTravel_StepDefinition.closeTheBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 216142,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.closeTheBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3168559616,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigates to Add Customer page",
+            "match": {
+              "location": "PhpTravel_StepDefinition.userNavigatesToAddCustomerPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7143674358,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Submits the new customer details as below",
+            "match": {
+              "location": "PhpTravel_StepDefinition.submitsTheNewCustomerDetailsAsBelow(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FirstName",
+                  "LastName",
+                  "EmailID",
+                  "Password",
+                  "MobNumber",
+                  "Country",
+                  "Add1",
+                  "Add2"
+                ]
+              },
+              {
+                "cells": [
+                  "Kaustubh",
+                  "Pandhare",
+                  "santosh.pandhare15@gmail.com",
+                  "pwd123",
+                  "9967887511",
+                  "Malta",
+                  "thane1",
+                  "thane2"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Add customer functionality",
+    "description": "",
+    "id": "add-customer-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/PhpAddCustomer.feature",
+    "tags": []
+  }
+]
